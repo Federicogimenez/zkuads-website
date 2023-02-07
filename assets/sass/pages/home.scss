@@ -1,0 +1,239 @@
+.banner{
+    width: 100%;
+    height: 40rem;
+    background-image: url('/assets/IMG/topbanner_1920.png');
+    background-size: cover;
+    background-position: center;
+    padding-top: 3rem;
+    &__title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: "Russo One";
+        letter-spacing: 1px;
+        color: #fff;
+        text-transform: uppercase;
+        text-shadow: 2px 2px rgb(31, 31, 31);
+        
+
+        &--1{font-size: 3.5rem;}
+        &--2{
+            span{
+                font-size: 4.4rem;
+                color: aqua;
+            }
+        }
+        &--3{
+            font-size: 4.5rem;
+        }
+    }
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    max-width: 47rem;
+    margin: 0 auto;
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+        margin-bottom: 6rem;
+    }
+
+    &__text{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        order: 1;
+        @media screen and (max-width: 600px) {
+            order: 2;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        h2{
+            margin-bottom: 1rem;
+            font-family: "Russo One";
+            letter-spacing: 1px;
+            font-size: 3rem;
+            letter-spacing: 1px;        
+            text-transform: uppercase;
+            color: #fff;
+            line-height: 1.5;
+        }
+        p{
+            color: #fff;
+            font-family: "Quicksand Light";
+            text-transform: lowercase;
+            font-size: 1.7rem;
+            width: 100%;
+            max-width: 25rem;
+
+            &::first-letter{
+                text-transform: uppercase;
+            }
+        }
+    }
+    &__img{
+        display: flex;
+        order: 2;
+        @media screen and (max-width: 600px) {
+            order: 1;
+        }
+        img{
+            width: 100%;
+            max-width: 20rem;
+        }
+    }
+}
+
+.games{
+    padding: 2rem;
+    width: 100%;
+    margin-bottom: 5rem;
+
+    h4{
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+        font-family: "Russo One";
+        font-size: 2.4rem;
+        letter-spacing: 1px;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+    }
+}
+
+.how-box{
+    width: 80%;
+    margin: 0rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 24rem));
+    grid-auto-rows: 26rem;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    margin-bottom: 5rem;
+
+
+    &__item-title{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 5.5rem;
+        flex-direction: column;
+        color: #fff;
+        font-size: 2rem;
+        font-family: "Russo One";
+        text-align: left;
+        text-transform: uppercase;
+        line-height: .9;
+
+
+        div{
+            span:last-of-type{
+                font-size: 6rem;
+            }
+        }
+    }
+    &__item-steps{
+        background-color: #221656;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &--img{ 
+            width: 50%;
+            margin-bottom: 1rem;
+        }
+        &--title{
+            font-family: "Quicksand Semibold";
+            font-size: 1.6rem;
+            color: #fff;
+            margin-bottom: 1rem;
+
+            &::first-letter{text-transform: uppercase;}
+        }
+        &--description{
+            font-family: "Quicksand Light";
+            font-size: 1.5rem;
+            color: #fff;
+            text-align: center;
+            padding: 0 1rem;
+
+            &::first-letter{text-transform: uppercase;}
+        }
+    }
+}
+
+.features{
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem 0;
+
+    @media screen and (max-width: 800px) {
+        width: 90%;
+    }
+    
+
+
+    &__title{
+        text-align: center;
+        font-family: "Russo One";
+        color: #fff;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        line-height: 1;
+        margin-bottom: 2rem;
+    }
+    &__item{
+        width: 100%;
+        height: 100%;
+        min-height: 32rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 2rem;
+        border-radius: 20px;
+        background-image: linear-gradient(122deg, #6134cd, #1b0e3a 80%);
+
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+            padding: 4rem;
+        }
+
+        &--img{
+            height: 90%;
+            max-height: 32rem;
+        }
+        &--text-box{
+            padding: 2rem;
+            padding-left: 10rem;
+            text-align: left;
+
+            @media screen and (max-width: 600px) {
+                padding-left: 0rem;
+            }
+        }
+        &--text-title{
+            display: block;
+            font-family: "Russo One";
+            color: #fff;
+            font-size: 2.4rem;
+            text-transform: uppercase;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+        &--text-description{                
+            font-family: "Quicksand Light";
+            color: #fff;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            line-height: 1;}
+    }
+}

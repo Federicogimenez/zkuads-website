@@ -1,0 +1,29 @@
+.text-degrade-1{
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: none;
+    background-image: linear-gradient(to right, #32feff, #5f37cd 81%);
+}
+.text-degrade-2{
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: none;
+    text-shadow: none;
+    background-image: linear-gradient(to right, #ffcc33, #f36928 81%);
+}
+
+// fonts sizes
+
+.fs-40{
+    font-size: 4rem !important;
+}
+.fs-30{
+    font-size: 3rem !important;
+}
+
+// margins
+
+.mb-50{margin-bottom: 5rem !important;}
+.mb-30{margin-bottom: 3rem !important;}

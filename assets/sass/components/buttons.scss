@@ -1,0 +1,22 @@
+.start-btn{
+    border: none;
+    display: block;
+    width: fit-content;
+    margin: 1.5rem auto;
+    padding: 1rem 4rem;
+    border-radius: 2.5rem;
+    font-family: "Quicksand Semibold";
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #151577;
+    background-image: linear-gradient(to right, #ffcb33, #f96e2b);
+    box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.833);
+    transition: all .15s ease;
+
+    &:active{
+        transform: translateY(2px);
+        color: #626279;
+        box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.733);
+    }
+}

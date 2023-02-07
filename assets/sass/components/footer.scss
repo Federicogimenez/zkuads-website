@@ -1,0 +1,73 @@
+.footer{
+    width: 100%;
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        
+        &--logo{
+            margin-bottom: 1rem;
+            width: 9rem;
+        }
+        &--copyright{
+            color: #fff;
+            font-family: "Quicksand Light";
+            font-size: 1.2rem;
+            text-align: center;
+
+            &::first-letter{text-transform: uppercase;}
+        }
+        &--follow-us{
+            color: #fff;
+            font-family: "Quicksand Regular";
+            font-size: 1.6rem;
+            text-transform: capitalize;
+            margin-right: auto;
+            margin-bottom: 1rem;
+        }
+        &--follow-icons{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        &--follow-icon-box{
+            background-color: #6134cd;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3rem;
+            height: 3rem;
+
+            &:not(:last-child){
+                margin-right: 5px;
+            }
+            
+            img{width: 2rem;}
+        }
+        &--contact-us-title{
+            color: #fff;
+            font-family: "Quicksand Regular";
+            text-transform: uppercase;
+            margin-right: auto;
+            margin-bottom: 1rem;
+
+        }
+        &--contact-us-text{
+            color: #fff;
+            font-family: "Quicksand Regular";
+            margin-right: auto;
+
+            img{
+                margin-right: 4px;
+                width: 2rem;
+            }
+        }
+    }
+}
